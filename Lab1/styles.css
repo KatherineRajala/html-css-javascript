@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(89, 14, 8);
+}
+
+.navigation-bar {
+    background-color: rgb(14, 12, 12);
+    height: 50px;
+}
+
+.navigation-bar a {
+    text-decoration: none;
+}
