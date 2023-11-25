@@ -1,0 +1,39 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    overflow-y: auto;
+    background-color: rgb(144, 81, 223);
+    padding: 0px;
+    border: 2px solid rgb(129, 232, 75);
+    margin: 0px;
+    text-align: center;
+    letter-spacing: 12px;
+}
+
+#game-content {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    margin-top: 100px;
+    margin-left: 0px;
+}
+
+h2 {
+    background-color: rgb(93, 241, 240);
+    border: 2px solid rgb(241, 178, 88);
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#my-link {
+    text-decoration: none;
+    color: rgb(100, 66, 226);
+    transition: background-color 0.3s;
+}
+
+#my-link:hover {
+    background-color: blueviolet;
+}
