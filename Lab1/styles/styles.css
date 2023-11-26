@@ -11,13 +11,14 @@ body {
 
 .navigation-bar {
     opacity: 0;
-    position: absolute;
+    position: sticky;
+    top: 0;
     left: 0;
-    bottom: -20px;
-    height: 50px;
+    height: auto;
     width: 100%;
     background-color: rgb(14, 12, 12);
     text-align: center;
+    z-index: 999;
 }
 
 .navigation-bar a {
@@ -28,7 +29,7 @@ body {
     color: rgb(165, 224, 103);
     border: 2px;
     letter-spacing: 2px;
-    transition: background-color 0.2s;
+    transition: background-color 0.3s;
 }
 
 .navigation-bar a:hover {
@@ -64,12 +65,76 @@ body {
     opacity: 0;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     background-color: rgb(246, 230, 197);
     padding: 10px;
-    width: 50%;
+    width: fit-content;
+    height: fit-content;
+    
     margin-left: auto;
     margin-right: auto;
     margin-top: 10%;
     margin-bottom: 10%;
     color: rgb(108, 129, 179);
+}
+
+article {
+    max-width: 1348px;
+}
+
+h1 {
+    margin: 0; 
+}
+
+#about img {
+    float: right;
+    clear: both;
+    width: 150px;
+    height: 200px;
+    margin: 0px 0px 5px 10px;
+}
+
+#unordered-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    letter-spacing: 2px;
+}
+
+#buttons {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.tablink {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(108, 129, 179);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0px 20px 0px 0px;
+    font-size: 20px;
+    font-weight: 550;
+    
+}
+
+.tablink:hover {
+    border-bottom: 2px solid rgb(108, 129, 179);
+}
+
+h4 {
+    margin-bottom: 5px;
+}
+
+#carrer p {
+    margin-top: 5px;
 }

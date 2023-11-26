@@ -27,8 +27,8 @@ function fadeInOnScroll(startUp, navigationBar, section) {
         return;
     }
 
-    if (startUp.style.opacity < 0.09) {
-        var opacity = 1 - 1.5 * startUp.style.opacity;
+    if (startUp.style.opacity < 0.12) {
+        var opacity = 1 - 2 * startUp.style.opacity;
 
         for (var i = 0; i < navigationBar.length; i++) {
             navigationBar[i].style.opacity = opacity;
@@ -40,17 +40,13 @@ function fadeInOnScroll(startUp, navigationBar, section) {
     }
     else {
         for (var i = 0; i < navigationBar.length; i++) {
-            navigationBar[i].style.opacity = 1 - startUpDiv.style.opacity;
-            navigationBar[i].style.position = "absolute";
-            navigationBar[i].style.top = "";
+            navigationBar[i].style.opacity = 0;
         }
     }
 
-    if (startUp.style.opacity < 0.06) {
+    if (startUp.style.opacity < 0.03) {
         for (var i = 0; i < navigationBar.length; i++) {
             navigationBar[i].style.opacity = 1;
-            navigationBar[i].style.position = "sticky";
-            navigationBar[i].style.top = 0;
         }
 
         for (var i = 0; i < section.length; i++) {
@@ -65,3 +61,18 @@ function scrollHandler() {
 }
 
 document.addEventListener('scroll', scrollHandler);
+
+
+function openPage(pageName, element) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+
+    // Hide all elements with class tabcontent
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    document.getElementById(pageName).style.display = "block";
+}
+
+document.getElementById("defaultOpen").click();

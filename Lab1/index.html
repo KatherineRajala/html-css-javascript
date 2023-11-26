@@ -4,10 +4,12 @@
         <meta charset="UTF-8" />
         <title>Web portfolio for Katherine Rajala</title>
         <link rel="stylesheet" href="styles/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <nav class="navigation-bar">
-            <a href="#about-carrer-education">About</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
             <a href="#portfolio">Portfolio</a>
             <a href="">Contact</a>
         </nav>
@@ -18,15 +20,92 @@
 
         <div id="main-content">
             <div id="content-container">
-                <section id="about-carrer-education" class="sections">
+                <section id="about" class="sections">
                     <article>
-                        <p>Text about me.</p>
+                        <h1>About</h1>
+                        <img src="images/CV - bild 2021-07-11.jpg" alt="Picture of the author of the portfolio, Katherine Rajala" 
+                        class="personal-portrait">
+                        <p>
+                            Hello! My name is <strong>Katherine Rajala</strong>. I have studied <strong>Mechanical&nbsp;Engineering</strong> 
+                            at <em>Linköping University</em> and I am a very driven and goal-oriented person who always 
+                            enjoys learning new things. 
+                        </p>
+                        <p>
+                            Currently I am working at <strong>Volvo Cars</strong> as a System Designer, which involves talking to different
+                            stakeholders to ensure that they fulfill our needs to achieve a safe working function.
+                        </p>
+                        <p>
+                            On my spare time, I
+                            tend to draw, play computer games, read books or go to the gym.
+                        </p>
+                        <p>
+                            My main future goal is to get into the software development industry by learning required skills in
+                            for example frontend and backend.
+                        </p>
+                        <p>
+                            Here are some programming languages or other programs that I am familiar with:
+                            <ul style="list-style-type:square">
+                                <li>C++</li>
+                                <li>C#</li>
+                                <li>Python</li>
+                                <li>Matlab</li>
+                                <li>Photoshop</li>
+                                <li>Creo</li>
+                                <li>SolidWorks</li>
+                            </ul>
+                        </p>
+                        
+                    </article>
+                </section>
+
+                <section id="experience" class="sections">
+                    <div id="buttons">
+                        <button class="tablink" onclick="openPage('carrer',this)" id="defaultOpen">Carrer</button>
+                        <button class="tablink" onclick="openPage('education', this)">Education</button>
+                    </div>
+
+                    <article id="carrer" class="tabcontent">
+                        <h4>Volvo Cars - System Designer</h4>
+                        <p>
+                            <em>August 2021</em> <br>
+                            Working with the stability aspect of the vehicle - most likely known as ABS and ESC/ESP system.
+                            Responsible for discussions with stakeholders to ensure fulfillment of our needs to ensure safe 
+                            and working functionality.
+                        </p>
+                        <h4>Norautron, Summer worker</h4>
+                        <p>
+                            <em>June 2019 and 2018</em> <br>
+                            Assemble components onto circuit boards and also test them.
+                        </p>
+                        <h4>Valmet Automotive - Summer worker &#40;through RDS Robotics&#41;</h4>
+                        <p>
+                            <em>June 2016</em> <br>
+                            Helped to load in the robots' feature packages.
+                        </p>
+                    </article>
+
+                    <article id="education" class="tabcontent">
+                        <h4>Degree of Master of Science in Engineering - Mechanical Engineering</h4>
+                        <p>
+                            <em>Linköping University 2016 - 2021</em> <br>
+                            Studied Mechanical Engineering at Linköping with a Master in Mechatronics.
+                            <br>
+                            <em>Aalto University 2019</em> <br>
+                            Studied Mechanical Engineering at Aalto as an exchange student.
+                        </p>
+                        <h4>High School Education</h4>
+                        <p>
+                            <em>Nils Ericsongymnasiet 2013 - 2016</em> <br>
+                            Science program.
+                        </p>
                     </article>
                 </section>
 
                 <section id="portfolio" class="sections">
-                    <p>Something something...
-                    </p>
+                    <article>
+                        <h1>Portfolio</h1>
+                        <p>Something something...</p>
+                    </article>
                 </section>
             </div>
         </div>
