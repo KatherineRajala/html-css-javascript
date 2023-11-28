@@ -16,7 +16,7 @@ body {
     left: 0;
     height: auto;
     width: 100%;
-    background-color: rgb(14, 12, 12);
+    background-color: rgb(58, 10, 25);
     text-align: center;
     z-index: 999;
 }
@@ -25,7 +25,7 @@ body {
     text-decoration: none;
     display: inline-block;
     padding: 9px;
-    font-size: 24px;
+    font-size: 18px;
     color: rgb(165, 224, 103);
     border: 2px;
     letter-spacing: 2px;
@@ -33,7 +33,7 @@ body {
 }
 
 .navigation-bar a:hover {
-    background-color: rgb(44, 40, 40);
+    background-color: rgb(75, 16, 34);
 }
 
 #main-content {
@@ -70,12 +70,12 @@ body {
     padding: 10px;
     width: fit-content;
     height: fit-content;
-    
     margin-left: auto;
     margin-right: auto;
     margin-top: 10%;
     margin-bottom: 10%;
     color: rgb(108, 129, 179);
+    border-radius: 20px;
 }
 
 article {
@@ -89,7 +89,7 @@ h1 {
 #about img {
     float: right;
     clear: both;
-    width: 150px;
+    width: 160px;
     height: 200px;
     margin: 0px 0px 5px 10px;
 }
@@ -106,7 +106,7 @@ ul {
     flex-wrap: wrap;
     letter-spacing: 2px;
 }
-
+/*
 #buttons {
     display: block;
     position: relative;
@@ -130,11 +130,98 @@ ul {
 .tablink:hover {
     border-bottom: 2px solid rgb(108, 129, 179);
 }
-
+*/
 h4 {
     margin-bottom: 5px;
 }
 
 #carrer p {
     margin-top: 5px;
+}
+
+.gallery {
+    display: inline-block;
+    max-width: 1348px;
+    height: auto;
+    width: auto;
+}
+
+.drawing {
+    height: auto;
+    width: 435px;
+    margin: 5px;
+    box-shadow: 3px 3px 1px #ccc;
+    -webkit-box-shadow: 3px 3px 1px #ccc;
+    -moz-box-shadow: 3px 3px 1px #ccc;
+}
+
+/*
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    top: 60%;
+    padding: 16px;
+    margin-top: -50px;
+    color: rgb(108, 129, 179);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(236, 236, 236, 0.8);
+}
+*/
+
+#mail-form {
+    margin: 10px 10px 10px 10px;
+}
+
+#email {
+    margin: 10px 0 10px 0;
+    width: 250px;
+}
+
+#comment-contact {
+    resize: none;
+    margin: 10px 0 10px 0;
+}
+
+#send-button {
+    color: rgb(108, 129, 179);
+    background-color: white;
+    border: 1px solid rgb(94, 94, 94);
+    border-radius: 2px;
+}
+
+.footer {
+    display: inline-block§;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 10px 0 0 0;
+    background-color: rgb(58, 10, 25);
+    text-align: center;
+    font-size: 14px;
+    color: rgb(165, 224, 103);
+}
+
+.footer p {
+    margin: 14px 0 0 0;
+}
+
+.footer-links {
+    text-decoration: none;
+    color: rgb(165, 224, 103);
 }

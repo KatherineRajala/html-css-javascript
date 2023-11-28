@@ -62,7 +62,7 @@ function scrollHandler() {
 
 document.addEventListener('scroll', scrollHandler);
 
-
+/* Button functionality - not using at this time at least
 function openPage(pageName, element) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -76,3 +76,15 @@ function openPage(pageName, element) {
 }
 
 document.getElementById("defaultOpen").click();
+
+
+function plusSlide(n) {
+    moveSlide(n);
+}
+
+function moveSlide(n) {
+    if (n < 0) {
+        
+    }
+}
+*/

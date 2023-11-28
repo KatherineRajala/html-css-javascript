@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <title>Web portfolio for Katherine Rajala</title>
         <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
@@ -11,7 +12,7 @@
             <a href="#about">About</a>
             <a href="#experience">Experience</a>
             <a href="#portfolio">Portfolio</a>
-            <a href="">Contact</a>
+            <a href="#contact">Contact</a>
         </nav>
         
         <div id="start-up-animation">
@@ -26,12 +27,12 @@
                         <img src="images/CV - bild 2021-07-11.jpg" alt="Picture of the author of the portfolio, Katherine Rajala" 
                         class="personal-portrait">
                         <p>
-                            Hello! My name is <strong>Katherine Rajala</strong>. I have studied <strong>Mechanical&nbsp;Engineering</strong> 
-                            at <em>Linköping University</em> and I am a very driven and goal-oriented person who always 
+                            Hello! My name is <strong>Katherine Rajala</strong>. I have a degree in <strong>Mechanical&nbsp;Engineering</strong> 
+                            from <em>Linköping&nbsp;University</em>. I am a very driven and goal-oriented person who always 
                             enjoys learning new things. 
                         </p>
                         <p>
-                            Currently I am working at <strong>Volvo Cars</strong> as a System Designer, which involves talking to different
+                            Currently I am working at <strong>Volvo Cars</strong> as a <em>System Designer</em>, which involves talking to different
                             stakeholders to ensure that they fulfill our needs to achieve a safe working function.
                         </p>
                         <p>
@@ -59,12 +60,14 @@
                 </section>
 
                 <section id="experience" class="sections">
+                    <!--
                     <div id="buttons">
                         <button class="tablink" onclick="openPage('carrer',this)" id="defaultOpen">Carrer</button>
                         <button class="tablink" onclick="openPage('education', this)">Education</button>
                     </div>
-
+                    -->
                     <article id="carrer" class="tabcontent">
+                        <h1>Experience</h1>
                         <h4>Volvo Cars - System Designer</h4>
                         <p>
                             <em>August 2021</em> <br>
@@ -93,22 +96,59 @@
                             <em>Aalto University 2019</em> <br>
                             Studied Mechanical Engineering at Aalto as an exchange student.
                         </p>
-                        <h4>High School Education</h4>
-                        <p>
-                            <em>Nils Ericsongymnasiet 2013 - 2016</em> <br>
-                            Science program.
-                        </p>
                     </article>
                 </section>
 
                 <section id="portfolio" class="sections">
                     <article>
                         <h1>Portfolio</h1>
-                        <p>Something something...</p>
+                        <h4>Drawings</h4>
+                        <div class="gallery">
+                            <img class="drawing" src="images/Övning.png" alt="Drawing of a girl posing">
+                            <img class="drawing" src="images/Pengu - discord Jul.png" alt="Penguin with a christmas hat and candy cane">
+                            <img class="drawing" src="images/Plague doctor.png" alt="A plague doctor">
+                            <!--
+                            <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlide(1)">&#10095;</a>
+                            -->
+                        </div>
+                        <h4>Code Projects</h4>
+                        <div>
+                            Adding picture here
+                        </div>
                     </article>
                 </section>
+
+                <section id="contact" class="sections">
+                    <article>
+                        <h1>Contact</h1>
+                            <form id="mail-form" action="mailto:KatherineRajala@outlook.com" method="post" enctype="text/plain">
+                            <label for="email">Email:</label> <br>
+                            <input type="text" id="email"> <br>
+                            <label for="comment-contact">Message:</label> <br>
+                            <textarea id="comment-contact" cols="58" rows="10"></textarea> <br>
+                            <input id="send-button" type="submit" value="Send">
+                     </form>
+                    </article>
+                </section>
+
+                <footer class="footer">
+                    <p>
+                        &copy; 2023
+                    </p>
+                    <p>
+                        <a class="footer-links" href="#">Terms of service</a>, 
+                        <a class="footer-links" href="#">Privacy Policy</a>
+                    </p>
+                    <p>
+                        <a class="footer-links" href="mailto:KatherineRajala@outlook.com" target="_blank">KatherineRajala@outlook.com</a>
+                        <a class="footer-links" href="https://www.linkedin.com/in/katherine-rajala-28228617b" target="_blank"><i style="font-size:24px" class="fa">&#xf08c;</i></a>
+                        <a class="footer-links" href="https://github.com/KatherineRajala" target="_blank"><i style="font-size:24px" class="fa">&#xf09b;</i></a>
+                    </p>
+                </footer>
             </div>
         </div>
+
         <!-- <p>How to create an image map:</p>
         <a href="https://www.tutorialspoint.com/How-to-create-clickable-areas-in-an-image-in-HTML">Image map tutorial</a>
         <p>how to host your web portfolio on github:</p>
