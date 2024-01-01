@@ -9,7 +9,7 @@ btnClickMe.addEventListener("click", function() {
     displayParagraph.textContent = count;
 });
 
-// Task 2 - key ip event
+// Task 2 - key up event
 const myInput = document.getElementById("myInput");
 const displayDiv = document.getElementById("displayDiv");
 myInput.addEventListener("keyup", function() {
