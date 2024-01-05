@@ -1,0 +1,22 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(197, 245, 238);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#header-title {
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    padding-top: 150px;
+    height: 250px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(243, 248, 252);
+    font-size: 72px;
+    color: rgb(213, 176, 248);
+}
