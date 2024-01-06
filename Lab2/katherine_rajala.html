@@ -7,14 +7,79 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header>
-        <h1 id="header-title">QUIZ</h1>
-    </header>
-
     <form id="main-form">
         <fieldset>
-            <legend>Legend</legend>
-            <div id="visitor-info"></div>
+            <div class="div-layout">
+                <h1>QUIZ</h1>
+                <label for="firstName" class="visitor-label">First name</label>
+                <input type="text" name="firstName" class="visitor-input">
+
+                <label for="lastName" class="visitor-label">Last name</label>
+                <input type="text" name="lastName" class="visitor-input">
+
+                <label for="email" class="visitor-label">Email address</label>
+                <input type="text" name="email" class="visitor-input">
+            </div>
+        </fieldset>
+
+        <div id="fixed-div">
+            <p>
+                Observe that the asterisk (*) denotes a mandatory question.
+            </p>
+        </div>
+
+        <fieldset>
+            <div class="div-layout">
+               <h2> Question 1*</h2>
+
+               <p>
+                    Text for question 1 here...
+                </p>
+
+               <div class="checkbox-options">
+                <input type="checkbox" name="option1">
+                <label for="option1">Option 1</label>
+               </div>
+
+               <div class="checkbox-options">
+                <input type="checkbox" name="option2">
+                <label for="option2">Option 2</label>
+               </div>
+
+               <div class="checkbox-options">
+                <input type="checkbox" name="option3">
+                <label for="option3">Option 3</label>
+               </div>
+
+               <div class="checkbox-options">
+                <input type="checkbox" name="option4">
+                <label for="option4">Option 4</label>
+               </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div class="div-layout">
+               <h2> Question 2*</h2>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div class="div-layout">
+               <h2> Question 3</h2>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div class="div-layout">
+               <h2> Question 4</h2>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div class="div-layout">
+               <h2> Question 5</h2>
+            </div>
         </fieldset>
     </form>
 
