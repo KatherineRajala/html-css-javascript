@@ -46,13 +46,21 @@ h1 {
     border-style: solid;
 }
 
-#fixed-div {
-    position: fixed;
-    display: flex;
-    bottom: 0;
-    right: 0;
-    text-align: center;
-    background-color: antiquewhite;
-    border: 3px solid red;
+.clarification {
+    position: absolute;
+    right: 45%;
+    width: fit-content;
+    font-size: 10px;
+}
 
+.clarification p {
+    margin-top: 20px;
+}
+
+.input-options {
+    display: inline-block;
+    margin: 5px 0 10px 0;
+    width: 50%;
+    min-width: fit-content;
+    text-align: left;
 }
