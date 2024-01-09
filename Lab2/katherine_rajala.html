@@ -12,13 +12,17 @@
             <div class="div-layout">
                 <h1>QUIZ</h1>
                 <label for="firstName" class="visitor-label">First name</label>
-                <input type="text" name="firstName" class="visitor-input">
+                <input type="text" name="firstName" class="visitor-input" id="firstName">
+                <span style="color:red">*</span>
 
                 <label for="lastName" class="visitor-label">Last name</label>
-                <input type="text" name="lastName" class="visitor-input">
+                <input type="text" name="lastName" class="visitor-input" id="lastName">
+                <span style="color:red">*</span>
 
                 <label for="email" class="visitor-label">Email address</label>
-                <input type="text" name="email" class="visitor-input">
+                <input type="text" name="email" class="visitor-input" id="email">
+                <span style="color:red">*</span>
+
             </div>
         </fieldset>
 
@@ -31,32 +35,32 @@
                 </p>
 
                <div class="input-options">
-                <input type="checkbox" name="cbOption1">
+                <input type="checkbox" name="cbOption1" class="cbQ1" value="corr">
                 <label for="cbOption1">Dala horse</label>
                </div>
 
                <div class="input-options">
-                <input type="checkbox" name="cbOption2">
+                <input type="checkbox" name="cbOption2" class="cbQ1" value="corr">
                 <label for="cbOption2">Fika</label>
                </div>
 
                <div class="input-options">
-                <input type="checkbox" name="cbOption3">
+                <input type="checkbox" name="cbOption3" class="cbQ1" value="wrong">
                 <label for="cbOption3">Sauna</label>
                </div>
 
                <div class="input-options">
-                <input type="checkbox" name="cbOption4">
+                <input type="checkbox" name="cbOption4" class="cbQ1" value="corr">
                 <label for="cbOption4">ABBA</label>
                </div>
 
                <div class="input-options">
-                <input type="checkbox" name="cbOption5">
+                <input type="checkbox" name="cbOption5" class="cbQ1" value="wrong">
                 <label for="cbOption5">Kebab pizza</label>
                </div>
 
                <div class="input-options">
-                <input type="checkbox" name="cbOption6">
+                <input type="checkbox" name="cbOption6" class="cbQ1" value="corr">
                 <label for="cbOption6">Recycling</label>
                </div>
 
@@ -77,23 +81,23 @@
                </p>
 
                <div class="input-options">
-                <input type="radio" name="rOption">
+                <input type="radio" name="rOption" value="wrong">
                 <label for="rOption">At 12.00 PM</label>
                </div>
 
                <div class="input-options">
-                <input type="radio" name="rOption">
+                <input type="radio" name="rOption" value="wrong">
                 <label for="rOption">After 08.00 PM</label>
                </div>
 
                <div class="input-options">
-                <input type="radio" name="rOption">
-                <label for="rOption">From 05.01 PM to 08.00 PM</label>
+                <input type="radio" name="rOption" value="corr">
+                <label for="rOption">From 05.00 PM to 08.00 PM</label>
                </div>
 
                <div class="input-options">
-                <input type="radio" name="rOption">
-                <label for="rOption">From 12.01 PM to 05.00 PM</label>
+                <input type="radio" name="rOption" value="wrong">
+                <label for="rOption">From 12.00 PM to 05.00 PM</label>
                </div>
 
                <div class="clarification">
@@ -109,7 +113,7 @@
                <h2> Question 3</h2>
 
                <p>
-                Text for question 3 here...
+                What are the 3 primary colors?
                </p>
 
                <input type="text" id="input-txtbox">
@@ -124,16 +128,18 @@
                 Is the following statement <em>true</em> or <em>false</em>?
                </p>
                <p>
-                Statement here...
+                There is a scale model of the Solar System in Sweden, where Globen
+                represents the Sun and the planets are placed across the country
+                 a scaled distance away, with a scaled size.
                </p>
 
                <div class="input-options">
-                <input type="radio" name="rStatement">
+                <input type="radio" name="rStatement" value="corr">
                 <label for="rStatement">True</label>
                </div>
 
                <div class="input-options">
-                <input type="radio" name="rStatement">
+                <input type="radio" name="rStatement" value="wrong">
                 <label for="rStatement">False</label>
                </div>
             </div>
@@ -142,8 +148,16 @@
         <fieldset>
             <div class="div-layout">
                <h2> Question 5</h2>
+
+               <p>
+                Text for question 5 here...
+               </p>
             </div>
         </fieldset>
+
+        <div>
+            <button type="submit" id="submit-button">Submit</button>
+        </div>
     </form>
 
 
