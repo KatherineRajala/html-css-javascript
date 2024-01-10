@@ -5,8 +5,10 @@ const email = document.getElementById("email");
 const submitButton = document.getElementById("submit-button");
 const checkboxesQ1 = document.getElementsByClassName("cbQ1");
 const radioButtonsQ2 = document.getElementsByName("rOption");
-const textboxQ3 = document.getElementById("input-textbox");
+const textboxQ3 = document.getElementById("input-txtbox");
 const statementQ4 = document.getElementsByName("rStatement");
+const dropDownQ5 = document.getElementById("ddCity");
+const scoringParagraph = document.getElementById("scoring");
 
 // Set initial score
 let score = 0;
@@ -55,19 +57,21 @@ submitButton.addEventListener("click", (event) => {
   // Checking Q1
   let notCheckedCounter = 0;
   let correctAnswerCounter = 0;
-  checkboxesQ1.forEach(element => {
-    if (!element.checked) {
+  for (let i = 0; i < checkboxesQ1.length; i++) {
+    if (!checkboxesQ1[i].checked) {
       notCheckedCounter++;
     }
-    else if (element.value === "corr" && element.checked) {
-      correctAnswerCounter++;
-    }
-  });
+    if (checkboxesQ1[i].value === "corr" && 
+        checkboxesQ1[i].checked) {
+          correctAnswerCounter++;
+        }
+  }
   if (notCheckedCounter === checkboxesQ1.length) {
     alert("Answer for question 1 is needed.");
     return;
   }
-  if (correctAnswerCounter === 4) {
+  if (correctAnswerCounter === 4 &&
+      notCheckedCounter === 2) {
     score++;
   }
   
@@ -87,19 +91,33 @@ submitButton.addEventListener("click", (event) => {
   }
 
   // Checking Q3 scoring
-  if (textboxQ3.value.includes('red') &&
+  // Known issue that it's possible to write other colors and still
+  // get a score if you at least put in the rgb colors.
+  if (textboxQ3 !== null) {
+    if (textboxQ3.value.includes('red') &&
       textboxQ3.value.includes('green') &&
       textboxQ3.value.includes('blue')) {
         score++;
   }
+  }
 
   // Checking Q4 scoring
-  statementQ4.forEach(element => {
-    if (element.value === "corr" && element.checked) {
-      score++;
-    }
-  });
+  //if (statementQ4 !== null) {
+    statementQ4.forEach(element => {
+      if (element.value === "corr" && element.checked) {
+        score++;
+      }
+    });
+  //}
 
   // Checking Q5 scoring
+  if (dropDownQ5.value === "corr" &&
+      dropDownQ5.options[dropDownQ5.selectedIndex].text === "Tirana") {
+        score++;
+      }
 
+  scoringParagraph.innerHTML = `Your score is ${score} / 5!`;
+  
+  // Reset score in case user goes back and changes answers
+  score = 0;
 });

@@ -31,7 +31,7 @@
                <h2> Question 1*</h2>
 
                <p>
-                    What is Sweden best known for?
+                    What is Sweden best known for (multiple choices)?
                 </p>
 
                <div class="input-options">
@@ -150,13 +150,25 @@
                <h2> Question 5</h2>
 
                <p>
-                Text for question 5 here...
+                Choose the capital of Albania:
                </p>
+
+               <select name="city" id="ddCity">
+                <option value="wrong">Sarajevo</option>
+                <option value="wrong">Paris</option>
+                <option value="corr">Tirana</option>
+                <option value="wrong">Bukarest</option>
+                <option value="wrong">Istanbul</option>
+               </select>
             </div>
         </fieldset>
 
-        <div>
+        <div class="div-layout" id="submit-and-score">
             <button type="submit" id="submit-button">Submit</button>
+
+            <p id="scoring">
+                
+            </p>
         </div>
     </form>
 
